@@ -19,6 +19,4 @@ export class AddComponent {
     console.log(data)
   }
 
-  
-
 }
