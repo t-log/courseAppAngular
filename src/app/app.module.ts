@@ -7,6 +7,7 @@ import { AddComponent } from './add/add.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes = [{path:"",component:AddComponent},
                         {path:"add",component:AddComponent},
@@ -24,7 +25,8 @@ const myRoute:Routes = [{path:"",component:AddComponent},
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
